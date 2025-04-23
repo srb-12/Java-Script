@@ -1,0 +1,29 @@
+<html>
+<body>
+<script type="text/javascript">
+function even_odd()
+{
+var num=document.getElementById("number").value;
+if(num % 2 == 0)
+{
+error1.textContent ="even number";
+error1.style.color = "red"
+//alert("even");
+}
+else
+{
+error1.textContent ="odd number";
+error1.style.color = "blue"
+//alert("odd");
+}
+} 
+</script>
+<label for="number">enter num:</label>
+<input type="text" id="number" name="name">
+<br><br>
+<input type="submit"value="submit" onClick="even_odd()">
+<br><br>
+<span id="error1"></span>
+</body>
+</html>
+
