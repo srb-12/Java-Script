@@ -1,0 +1,27 @@
+<script>
+function isPalindrome(str) 
+{
+
+    let cleanStr = str.toLowerCase().replace();
+
+ 
+    let reversedStr = cleanStr.split('').reverse().join('');
+
+
+    return cleanStr === reversedStr;
+}
+
+
+let input = "madam";
+
+if (isPalindrome(input))
+ {
+
+    console.log(input + " is a palindrome!");
+} 
+else
+ {
+
+    console.log(input + " is not a palindrome.");
+}
+</script>

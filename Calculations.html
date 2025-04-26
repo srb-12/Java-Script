@@ -1,0 +1,62 @@
+<html>
+<body>
+<form  align="center" >
+<label for="NUM">ENTER FIRST NUM:</label>
+<input type="text" id="name1" name="name">
+<br><br>
+<label for="NUM">ENTER SECOND NUM:</label>
+<input type="text"  id="name2" name="name">
+<br><br>
+<input type="button" value="add" onclick="add()">
+<input type="button" value="sub" onclick="sub()">
+<input type="button" value="mul" onclick="mul()">
+<input type="button" value="div" onclick="div()">
+<br><br>
+<span id="error1"></span>
+
+</form>
+<script>
+function add()
+{
+var a=parseInt(document.getElementById("name1").value);
+var b=parseInt(document.getElementById("name2").value);
+var sum=a+b;
+var add1=sum;
+error1.textContent ="Addition  "+add1;
+error1.style.color = "red"
+}
+function sub()
+{
+var a=parseInt(document.getElementById("name1").value);
+var b=parseInt(document.getElementById("name2").value);
+var sub=a-b;
+var sub1=sub;
+error1.textContent ="subtarction  "+sub1;
+error1.style.color = "green"
+
+}
+function mul()
+{
+var a=parseInt(document.getElementById("name1").value);
+var b=parseInt(document.getElementById("name2").value);
+var mul=a*b;
+var mul1=mul;
+error1.textContent ="multiplication  "+mul1;
+error1.style.color = "green"
+
+
+}
+function div()
+{
+var a=parseInt(document.getElementById("name1").value);
+var b=parseInt(document.getElementById("name2").value);
+var div=a/b;
+var div1=div;
+error1.textContent ="Division  "+div1;
+error1.style.color = "ornge"
+
+
+}
+</script>
+</body>
+</html>

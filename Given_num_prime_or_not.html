@@ -1,0 +1,30 @@
+<html>
+<body>
+<script type="text/javascript">
+function prime()
+{
+var num=document.getElementById("number").value;
+count = 10
+for(i=1;i<=num;i++)
+ {
+if(num % i ==0)
+  {
+count=count+1;
+ }
+  }
+if(count==12)
+{
+console.log("prime");
+}
+else
+{
+console.log("not prime");
+}
+}
+</script>
+<label>Enter Num:</label>
+<input type="text" id="number">
+<input type="submit" onclick=prime()>
+</body>
+</html>
+

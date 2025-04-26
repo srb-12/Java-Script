@@ -1,0 +1,36 @@
+<html>
+<body>
+<label>Enter Num:</label>
+<input type="text" id="number">
+<input type="submit" onclick=int()>
+<script>
+function int()
+{
+  var num= document.getElementById("number").value
+  console.log(num);
+ let evenNumbers=[];
+ let oddNumbers=[];
+ let evenNum = "";
+ let oddNum ="";
+  for(let i = 1; i <= num; i++)
+  {
+    if(i%2===0)
+    {
+    evenNumbers.push(i);
+	evenNum = evenNum + i + "  ";
+    }
+    else
+    {
+    oddNumbers.push(i);
+    oddNum = oddNum + i + " ";
+    }
+
+  }
+console.log(evenNumbers);
+console.log(oddNumbers);
+console.log(evenNum);
+console.log(oddNum);
+}
+</script>
+</body>
+</html>
